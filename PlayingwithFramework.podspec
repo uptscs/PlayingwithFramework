@@ -1,40 +1,16 @@
-#
-# Be sure to run `pod lib lint PlayingwithFramework.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
-  s.name             = "PlayingwithFramework"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of PlayingwithFramework."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PlayingwithFramework"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "upendra.tripathi" => "upendra.tripathi@oracle.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PlayingwithFramework.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
-
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'PlayingwithFramework' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.name          = "PlayingwithFramework"
+    s.version       = "0.1.0"
+    s.license       = "Commercial"
+    s.authors       = "Upendra"
+    s.homepage      = "https://github.com/uptscs/PlayingwithFramework"
+    s.summary       = "A sample library test app"
+    s.source        = { :git => "https://github.com/pushio/PushIOManager_iOS.git" }
+    s.platform      = :ios, '6.0'
+    s.requires_arc  = false
+    s.frameworks    = 'PushIOManager'
+    s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PushIOManager"' }
+    s.preserve_paths = 'PushIOManager.framework'
+    s.source_files      = 'PushIOManager.framework/Headers/*.{h}'
 end

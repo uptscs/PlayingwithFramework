@@ -1,0 +1,14 @@
+PODS:
+  - PlayingwithFramework (0.1.0)
+
+DEPENDENCIES:
+  - PlayingwithFramework (from `../`)
+
+EXTERNAL SOURCES:
+  PlayingwithFramework:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PlayingwithFramework: 9fa5bfb4bc36c9c61a4f46f25cd00f766e651a9c
+
+COCOAPODS: 0.39.0

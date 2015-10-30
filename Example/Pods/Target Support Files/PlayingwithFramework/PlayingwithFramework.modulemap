@@ -1,0 +1,6 @@
+framework module PlayingwithFramework {
+  umbrella header "PlayingwithFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
